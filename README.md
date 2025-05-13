@@ -1,0 +1,81 @@
+### Smart Recipe App
+
+An AI-powered recipe recommendation web app that helps users find meals they can cook with ingredients they already have.
+
+This project idea is inspired by the MLH tutorial:  
+[Smart Recipe Application with Django and MongoDB](https://news.mlh.io/smart-recipe-application-tutorial-with-django-and-mongodb-05-07-2025?utm_source=mlh&utm_medium=referral&utm_content=mlh.link%2Fghwos525-mongodb-blogpost)
+
+<!-- ROADMAP -->
+## Roadmap
+
+### Phase 1: Environment Setup 
+- [ ] Project structure setup
+  - [ ] `/backend` folder for Django API
+  - [ ] Virtual environment initialized
+  - [ ] Python dependencies installed
+- [ ] Git & GitHub setup
+  - [ ] `.gitignore` and `LICENSE`
+  - [ ] Connected local repo to GitHub
+  - [ ] Initial `README.md` with project intro
+- [ ] MongoDB Atlas integration
+  - [ ] Create database and collection
+  - [ ] Configure connection string in `.env`
+  - [ ] Enable IP whitelist and DB user access
+
+---
+
+### Phase 2: Backend API Development 
+- [ ] Django REST Framework setup
+  - [ ] Install `djangorestframework`
+  - [ ] Add REST routing for `recipes/search`
+- [ ] Core API logic
+  - [ ] Implement `POST /api/recipes/search`
+  - [ ] Convert ingredients to embedding using Voyage AI
+  - [ ] Match similar recipes using cosine similarity
+- [ ] Claude LLM integration
+  - [ ] Call Claude API with matched recipe context
+  - [ ] Return Claude suggestion in response JSON
+- [ ] Dataset import utility
+  - [ ] Parse and clean external recipe JSON
+  - [ ] Generate embeddings and insert into MongoDB
+
+---
+
+### Phase 3: Frontend UI 
+- [ ] Frontend project initialization (React + Vite)
+- [ ] Build ingredient input form
+- [ ] Display API results (recipes + Claude suggestion)
+- [ ] UI/UX styling with Tailwind CSS
+
+---
+
+### Phase 4: Deployment & DevOps
+- [ ] Dockerize Django backend
+  - [ ] Create `Dockerfile` and production-ready image
+- [ ] `docker-compose.yml` for full stack (backend + frontend)
+- [ ] Deploy to Render, Railway, or AWS
+- [ ] `.env.example` and deployment instructions
+
+---
+
+### Phase 5: Testing & Monitoring 
+- [ ] Add request/response error handling
+- [ ] Log Claude responses and similarity scores
+- [ ] Create basic automated tests (pytest or DRF test client)
+- [ ] Optional: Add Prometheus & Grafana integration
+
+---
+
+### Bonus Ideas (Stretch Goals)
+- [ ] Add user authentication and allow saving favorite recipes
+- [ ] Use computer vision to extract ingredients from fridge photos
+- [ ] Support multiple languages using Claude LLM prompt customization
+
+<!-- LICENSE -->
+## License
+
+Distributed under the project_license. See [LICENSE](./LICENSE) for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
