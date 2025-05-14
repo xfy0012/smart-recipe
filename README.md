@@ -53,7 +53,7 @@ cooker recipes: https://eightportions.com/datasets/Recipes/
 - [ ] Optional: Write a bulk upload script that reads JSON and POSTs to the API
 
 
-### Phase 2: Backend API Development 
+### Phase 3: Backend API Development 
 - [ ] Django REST Framework setup
   - [ ] Install `djangorestframework`
   - [ ] Add REST routing for `recipes/search`
@@ -70,7 +70,7 @@ cooker recipes: https://eightportions.com/datasets/Recipes/
 
 ---
 
-### Phase 3: Frontend UI 
+### Phase 4: Frontend UI 
 - [ ] Frontend project initialization (React + Vite)
 - [ ] Build ingredient input form
 - [ ] Display API results (recipes + Claude suggestion)
@@ -78,7 +78,7 @@ cooker recipes: https://eightportions.com/datasets/Recipes/
 
 ---
 
-### Phase 4: Deployment & DevOps
+### Phase 5: Deployment & DevOps
 - [ ] Dockerize Django backend
   - [ ] Create `Dockerfile` and production-ready image
 - [ ] `docker-compose.yml` for full stack (backend + frontend)
@@ -87,7 +87,7 @@ cooker recipes: https://eightportions.com/datasets/Recipes/
 
 ---
 
-### Phase 5: Testing & Monitoring 
+### Phase 6: Testing & Monitoring 
 - [ ] Add request/response error handling
 - [ ] Log Claude responses and similarity scores
 - [ ] Create basic automated tests (pytest or DRF test client)
