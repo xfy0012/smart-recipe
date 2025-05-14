@@ -5,21 +5,37 @@ An AI-powered recipe recommendation web app that helps users find meals they can
 This project idea is inspired by the MLH tutorial:  
 [Smart Recipe Application with Django and MongoDB](https://news.mlh.io/smart-recipe-application-tutorial-with-django-and-mongodb-05-07-2025?utm_source=mlh&utm_medium=referral&utm_content=mlh.link%2Fghwos525-mongodb-blogpost)
 
+
+cooker recipes: https://eightportions.com/datasets/Recipes/
+
+### Prerequisites
+* IDE: Visual Studio Code
+* Python 3.10 or later 
+* Docker for containerization
+* Atlas CLI for MongoDB integration
+* A local Atlas deployment
+* Voyage API key for embeddings
+* Anthropic API key for the LLM
+
+### Getting Started
+
+
+
 <!-- ROADMAP -->
 ## Roadmap
 
 ### Phase 1: Environment Setup 
 - [ ] Project structure setup
-  - [ ] `/backend` folder for Django API
-  - [ ] Virtual environment initialized
-  - [ ] Python dependencies installed
-- [ ] Git & GitHub setup
-  - [ ] `.gitignore` and `LICENSE`
-  - [ ] Connected local repo to GitHub
-  - [ ] Initial `README.md` with project intro
-- [ ] MongoDB Atlas integration
-  - [ ] Create database and collection
-  - [ ] Configure connection string in `.env`
+  - [X] `/backend` folder for Django API
+  - [X] Virtual environment initialized
+  - [X] Python dependencies installed
+- [X] Git & GitHub setup
+  - [X] `.gitignore` and `LICENSE`
+  - [X] Connected local repo to GitHub
+  - [X] Initial `README.md` with project intro
+- [X] MongoDB Atlas integration
+  - [X] Create database and collection
+  - [X] Configure connection string in `.env`
   - [ ] Enable IP whitelist and DB user access
 
 ---
