@@ -16,6 +16,7 @@ cooker recipes: https://eightportions.com/datasets/Recipes/
 * A local Atlas deployment
 * Voyage API key for embeddings
 * Anthropic API key for the LLM
+* Jupyter Notebook for data clean
 
 ### Getting Started
 
@@ -25,7 +26,7 @@ cooker recipes: https://eightportions.com/datasets/Recipes/
 ## Roadmap
 
 ### Phase 1: Environment Setup 
-- [ ] Project structure setup
+- [X] Project structure setup
   - [X] `/backend` folder for Django API
   - [X] Virtual environment initialized
   - [X] Python dependencies installed
@@ -39,6 +40,18 @@ cooker recipes: https://eightportions.com/datasets/Recipes/
   - [ ] Enable IP whitelist and DB user access
 
 ---
+### Phase 2: Data preparation 
+- [ ] Download and inspect the `recipes_raw.json` dataset
+- [ ] Create a Jupyter Notebook `data_cleaning.ipynb` to prepare data for API upload
+  - [ ] Load and normalize basic fields: `title`, `ingredients`, and `instructions`
+  - [ ] Clean invalid or incomplete records (e.g. empty ingredients or missing title)
+  - [ ] Prepare the `embedding_ingredients` string (optional, can also be done in backend)
+  - [ ] Preview cleaned recipe objects
+- [ ] Submit cleaned recipes to backend API (`POST /api/recipes/`)
+  - [ ] Backend will generate embeddings using Voyage AI
+  - [ ] Backend will insert the full recipe (including embedding) into MongoDB
+- [ ] Optional: Write a bulk upload script that reads JSON and POSTs to the API
+
 
 ### Phase 2: Backend API Development 
 - [ ] Django REST Framework setup
