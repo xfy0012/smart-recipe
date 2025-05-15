@@ -41,11 +41,11 @@ cooker recipes: https://eightportions.com/datasets/Recipes/
 
 ---
 ### Phase 2: Data preparation 
-- [ ] Download and inspect the `recipes_raw.json` dataset
-- [ ] Create a Jupyter Notebook `data_cleaning.ipynb` to prepare data for API upload
-  - [ ] Load and normalize basic fields: `title`, `ingredients`, and `instructions`
-  - [ ] Clean invalid or incomplete records (e.g. empty ingredients or missing title)
-  - [ ] Prepare the `embedding_ingredients` string (optional, can also be done in backend)
+- [X] Download and inspect the `recipes_raw.json` dataset
+- [X] Create a Jupyter Notebook `data_cleaning.ipynb` to prepare data for API upload
+  - [X] Load and normalize basic fields: `title`, `ingredients`, and `instructions`
+  - [X] Clean invalid or incomplete records (e.g. empty ingredients or missing title)
+  - [ ] Prepare the `embedding_ingredients` string
   - [ ] Preview cleaned recipe objects
 - [ ] Submit cleaned recipes to backend API (`POST /api/recipes/`)
   - [ ] Backend will generate embeddings using Voyage AI
