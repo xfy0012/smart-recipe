@@ -54,9 +54,9 @@ cooker recipes: https://eightportions.com/datasets/Recipes/
 
 
 ### Phase 3: Backend API Development 
-- [ ] Django REST Framework setup
-  - [ ] Install `djangorestframework`
-  - [ ] Add REST routing for `recipes/search`
+- [X] Django REST Framework setup
+  - [X] Install `djangorestframework`
+  - [X] Add REST routing for `recipes/search`
 - [ ] Core API logic
   - [ ] Implement `POST /api/recipes/search`
   - [ ] Convert ingredients to embedding using Voyage AI
