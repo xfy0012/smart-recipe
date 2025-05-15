@@ -64,3 +64,9 @@ __snapshots__/
 .idea/
 *.orig
 *.rej
+
+# Ignore data and processed files
+data/
+notebook/cleaned_recipes.json
+
+
